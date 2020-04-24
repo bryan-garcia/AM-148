@@ -1,0 +1,68 @@
+make[1]: Entering directory `/home/bgarci26/assignments/HW2/mandelbrot-src'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/bgarci26/assignments/HW2/mandelbrot-src'
+Beginning benchmark...
+--------------------------------
+SERIAL Mandelbrot generation: 
+Width: 1024 
+Height: 1024 
+Max_iter: 256 
+TOTAL TIME (ms): 350.000000
+--------------------------------
+
+--------------------------------
+PARALLEL Mandelbrot generation: 
+Width: 1024 
+Height: 1024 
+Max_iter: 256 
+TOTAL TIME (ms): 2.502176
+--------------------------------
+
+--------------------------------
+SERIAL Mandelbrot generation: 
+Width: 2048 
+Height: 2048 
+Max_iter: 256 
+TOTAL TIME (ms): 1390.000000
+--------------------------------
+
+--------------------------------
+PARALLEL Mandelbrot generation: 
+Width: 2048 
+Height: 2048 
+Max_iter: 256 
+TOTAL TIME (ms): 2.564352
+--------------------------------
+
+--------------------------------
+SERIAL Mandelbrot generation: 
+Width: 4096 
+Height: 4096 
+Max_iter: 256 
+TOTAL TIME (ms): 5510.000000
+--------------------------------
+
+--------------------------------
+PARALLEL Mandelbrot generation: 
+Width: 4096 
+Height: 4096 
+Max_iter: 256 
+TOTAL TIME (ms): 18.098816
+--------------------------------
+
+--------------------------------
+SERIAL Mandelbrot generation: 
+Width: 8192 
+Height: 8192 
+Max_iter: 256 
+TOTAL TIME (ms): 21990.000000
+--------------------------------
+
+--------------------------------
+PARALLEL Mandelbrot generation: 
+Width: 8192 
+Height: 8192 
+Max_iter: 256 
+TOTAL TIME (ms): 78.377213
+--------------------------------
+
