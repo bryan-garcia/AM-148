@@ -217,6 +217,8 @@ float mandelbrot(const int width, const int height, const int max_iter, bool ser
 
         cudaEventRecord(end, 0);
         cudaEventSynchronize(end);
+        
+        cudaDeviveSynchronize()
         cudaEventElapsedTime(&duration, start, end);
         cudaEventDestroy(start);
         cudaEventDestroy(end);

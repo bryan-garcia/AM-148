@@ -56,17 +56,17 @@ void benchmark_saxpy(const int dim, float a, float* x, float* y, bool serial_mod
 
     // Declaring/initializing here, but will be reset...
     //  (I was running into some issues otherwise...)
-    auto start = std::chrono::high_resolution_clock::now();
-    auto end = std::chrono::high_resolution_clock::now();
-    auto chrono_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
+    auto startc = std::chrono::high_resolution_clock::now();
+    auto endc = std::chrono::high_resolution_clock::now();
+    auto chrono_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(endc - startc);
 
     if (serial_mode) {
 
         // Begin timing of serial saxpy function.
-        start = std::chrono::high_resolution_clock::now();
+        startc = std::chrono::high_resolution_clock::now();
         saxpy_serial(dim, a, x, y);
-        end = std::chrono::high_resolution_clock::now();
-        chrono_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
+        endc = std::chrono::high_resolution_clock::now();
+        chrono_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(endc - startc);
     }
 
     else {
@@ -88,20 +88,25 @@ void benchmark_saxpy(const int dim, float a, float* x, float* y, bool serial_mod
         cudaEventCreate(&start);
         cudaEventCreate(&end);
         cudaEventRecord(start, 0);
-
+        startc = std::chrono::high_resolution_clock::now();
         saxpy_gpu<<<(dim + 255) / 256, 256>>>(dim, a, d_x, d_y);
-
+        cudaDeviceSynchronize();
+        endc = std::chrono::high_resolution_clock::now();
         cudaEventRecord(end, 0);
         cudaEventSynchronize(end);
+        cudaDeviceSynchronize();
         cudaEventElapsedTime(&duration, start, end);
         cudaEventDestroy(start);
         cudaEventDestroy(end);
         
-        cudaDeviceSynchronize();
         cudaMemcpy(y, d_y, buffer_size, cudaMemcpyDeviceToHost);
 
         cudaFree(d_x);
         cudaFree(d_y);
+
+        chrono_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(endc - startc);
+
+        std::cout << "\n\n" << chrono_duration.count()  << "\n\n";
     }
 
     // Prompt reporting Saxpy time (in ns) //
@@ -112,6 +117,6 @@ void benchmark_saxpy(const int dim, float a, float* x, float* y, bool serial_mod
     std::cout << "Dimension: " << dim << std::endl;
     std::cout << "TOTAL TIME (ns): ";
     if (serial_mode) std::cout << chrono_duration.count();
-    else std::cout << duration * 1000000;
+    else std::cout << duration * 1000000.0;
     std::cout << "\n--------------------------------\n\n";
 }

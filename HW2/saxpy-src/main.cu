@@ -27,7 +27,7 @@ int main() {
 
     // testVals contains the various vector sizes to be
     // benchmarked.
-    int testVals[] = {16, 128, 1024, 2048, 65536};
+    int testVals[] = {16, 128, 1024, 2048, 4096, 65536};
     int N;
     float a = 2.0f;
     float* x;
@@ -35,7 +35,7 @@ int main() {
     bool serial_mode;
 
     // Looping over all vector sizes listed above.
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < sizeof(testVals) / sizeof(int); i++) {
         
         N = testVals[i];
 
