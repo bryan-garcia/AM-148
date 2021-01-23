@@ -1,0 +1,358 @@
+make[1]: Entering directory `/home/bgarci26/workspace/HW3'
+nvcc -std=c++11 -rdc=true  -dc mat.cu
+nvcc -std=c++11 -rdc=true  -dc matopers.cu
+nvcc -std=c++11 -rdc=true  -o matmult matbenchmark.cu mat.o matopers.o
+make[1]: Leaving directory `/home/bgarci26/workspace/HW3'
+
+-------------------------------------------------------------------
+* Beginning Matrix-Vector benchmark *
+-------------------------------------------------------------------
+
+===================================================================
+// Matrix A: (Height, Width) = (16, 16)
+// Vector B: (Height, Width) = (16, 1)
+// Vector C: (Height, Width) = (16, 1)
+
+
+// Starting serialMatMult...
+// End of serialMatMult...
+// serialMatMult completed with an elapsed time of: 0.001146 (ms).
+
+
+// Matrix A: (Height, Width) = (16, 16)
+// Vector B: (Height, Width) = (16, 1)
+// Vector C: (Height, Width) = (16, 1)
+
+
+// Launching 'Naive' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 1
+// End of 'Naive' MatMul Kernel...
+// 'Naive' MatMult completed with an elapsed time of 0.029696 (ms).
+
+
+// Matrix A: (Height, Width) = (16, 16)
+// Vector B: (Height, Width) = (16, 1)
+// Vector C: (Height, Width) = (16, 1)
+
+
+Launching Shared Memory MatMult Kernel...
+// Launching 'Shared' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 1
+// End of 'Shared' MatMul Kernel...
+// 'Shared' MatMult completed with an elapsed time of 0.012256 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (128, 128)
+// Vector B: (Height, Width) = (128, 1)
+// Vector C: (Height, Width) = (128, 1)
+
+
+// Starting serialMatMult...
+// End of serialMatMult...
+// serialMatMult completed with an elapsed time of: 0.039545 (ms).
+
+
+// Matrix A: (Height, Width) = (128, 128)
+// Vector B: (Height, Width) = (128, 1)
+// Vector C: (Height, Width) = (128, 1)
+
+
+// Launching 'Naive' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 4
+// End of 'Naive' MatMul Kernel...
+// 'Naive' MatMult completed with an elapsed time of 0.023552 (ms).
+
+
+// Matrix A: (Height, Width) = (128, 128)
+// Vector B: (Height, Width) = (128, 1)
+// Vector C: (Height, Width) = (128, 1)
+
+
+Launching Shared Memory MatMult Kernel...
+// Launching 'Shared' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 4
+// End of 'Shared' MatMul Kernel...
+// 'Shared' MatMult completed with an elapsed time of 0.018400 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (1024, 1024)
+// Vector B: (Height, Width) = (1024, 1)
+// Vector C: (Height, Width) = (1024, 1)
+
+
+// Starting serialMatMult...
+// End of serialMatMult...
+// serialMatMult completed with an elapsed time of: 2.484292 (ms).
+
+
+// Matrix A: (Height, Width) = (1024, 1024)
+// Vector B: (Height, Width) = (1024, 1)
+// Vector C: (Height, Width) = (1024, 1)
+
+
+// Launching 'Naive' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 32
+// End of 'Naive' MatMul Kernel...
+// 'Naive' MatMult completed with an elapsed time of 0.152544 (ms).
+
+
+// Matrix A: (Height, Width) = (1024, 1024)
+// Vector B: (Height, Width) = (1024, 1)
+// Vector C: (Height, Width) = (1024, 1)
+
+
+Launching Shared Memory MatMult Kernel...
+// Launching 'Shared' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 32
+// End of 'Shared' MatMul Kernel...
+// 'Shared' MatMult completed with an elapsed time of 0.095264 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (2048, 2048)
+// Vector B: (Height, Width) = (2048, 1)
+// Vector C: (Height, Width) = (2048, 1)
+
+
+// Starting serialMatMult...
+// End of serialMatMult...
+// serialMatMult completed with an elapsed time of: 10.175756 (ms).
+
+
+// Matrix A: (Height, Width) = (2048, 2048)
+// Vector B: (Height, Width) = (2048, 1)
+// Vector C: (Height, Width) = (2048, 1)
+
+
+// Launching 'Naive' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 64
+// End of 'Naive' MatMul Kernel...
+// 'Naive' MatMult completed with an elapsed time of 0.316416 (ms).
+
+
+// Matrix A: (Height, Width) = (2048, 2048)
+// Vector B: (Height, Width) = (2048, 1)
+// Vector C: (Height, Width) = (2048, 1)
+
+
+Launching Shared Memory MatMult Kernel...
+// Launching 'Shared' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 64
+// End of 'Shared' MatMul Kernel...
+// 'Shared' MatMult completed with an elapsed time of 0.189472 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (8192, 8192)
+// Vector B: (Height, Width) = (8192, 1)
+// Vector C: (Height, Width) = (8192, 1)
+
+
+// Starting serialMatMult...
+// End of serialMatMult...
+// serialMatMult completed with an elapsed time of: 161.567322 (ms).
+
+
+// Matrix A: (Height, Width) = (8192, 8192)
+// Vector B: (Height, Width) = (8192, 1)
+// Vector C: (Height, Width) = (8192, 1)
+
+
+// Launching 'Naive' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 256
+// End of 'Naive' MatMul Kernel...
+// 'Naive' MatMult completed with an elapsed time of 3.651584 (ms).
+
+
+// Matrix A: (Height, Width) = (8192, 8192)
+// Vector B: (Height, Width) = (8192, 1)
+// Vector C: (Height, Width) = (8192, 1)
+
+
+Launching Shared Memory MatMult Kernel...
+// Launching 'Shared' MatMult Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 256
+// End of 'Shared' MatMul Kernel...
+// 'Shared' MatMult completed with an elapsed time of 2.157536 (ms).
+
+
+===================================================================
+
+-------------------------------------------------------------------
+* Beginning Matrix-Transpose benchmark *
+-------------------------------------------------------------------
+
+===================================================================
+// Matrix A: (Height, Width) = (16, 16)
+
+
+// Starting serialMatTranspose...
+// End of serialMatTranspose...
+// serialMatTranspose completed with an elapsed time of: 0.033903 (ms).
+
+
+// Matrix A: (Height, Width) = (16, 16)
+
+
+// Launching 'Naive' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 1
+// End of 'Naive' MatTranspose Kernel...
+// 'Naive' MatTranspose completed with an elapsed time of 0.018400 (ms).
+
+
+// Matrix A: (Height, Width) = (16, 16)
+
+
+// Launching 'Shared' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 1 1
+// End of 'Shared' MatTranspose Kernel...
+// 'Shared' MatTranspose completed with an elapsed time of 0.010208 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (128, 128)
+
+
+// Starting serialMatTranspose...
+// End of serialMatTranspose...
+// serialMatTranspose completed with an elapsed time of: 0.068541 (ms).
+
+
+// Matrix A: (Height, Width) = (128, 128)
+
+
+// Launching 'Naive' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 4 4
+// End of 'Naive' MatTranspose Kernel...
+// 'Naive' MatTranspose completed with an elapsed time of 0.013824 (ms).
+
+
+// Matrix A: (Height, Width) = (128, 128)
+
+
+// Launching 'Shared' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 4 4
+// End of 'Shared' MatTranspose Kernel...
+// 'Shared' MatTranspose completed with an elapsed time of 0.009056 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (1024, 1024)
+
+
+// Starting serialMatTranspose...
+// End of serialMatTranspose...
+// serialMatTranspose completed with an elapsed time of: 11.624486 (ms).
+
+
+// Matrix A: (Height, Width) = (1024, 1024)
+
+
+// Launching 'Naive' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 32 32
+// End of 'Naive' MatTranspose Kernel...
+// 'Naive' MatTranspose completed with an elapsed time of 0.065920 (ms).
+
+
+// Matrix A: (Height, Width) = (1024, 1024)
+
+
+// Launching 'Shared' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 32 32
+// End of 'Shared' MatTranspose Kernel...
+// 'Shared' MatTranspose completed with an elapsed time of 0.067424 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (2048, 2048)
+
+
+// Starting serialMatTranspose...
+// End of serialMatTranspose...
+// serialMatTranspose completed with an elapsed time of: 92.004478 (ms).
+
+
+// Matrix A: (Height, Width) = (2048, 2048)
+
+
+// Launching 'Naive' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 64 64
+// End of 'Naive' MatTranspose Kernel...
+// 'Naive' MatTranspose completed with an elapsed time of 0.215072 (ms).
+
+
+// Matrix A: (Height, Width) = (2048, 2048)
+
+
+// Launching 'Shared' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 64 64
+// End of 'Shared' MatTranspose Kernel...
+// 'Shared' MatTranspose completed with an elapsed time of 0.218176 (ms).
+
+
+===================================================================
+
+===================================================================
+// Matrix A: (Height, Width) = (8192, 8192)
+
+
+// Starting serialMatTranspose...
+// End of serialMatTranspose...
+// serialMatTranspose completed with an elapsed time of: 1463.770420 (ms).
+
+
+// Matrix A: (Height, Width) = (8192, 8192)
+
+
+// Launching 'Naive' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 256 256
+// End of 'Naive' MatTranspose Kernel...
+// 'Naive' MatTranspose completed with an elapsed time of 3.054016 (ms).
+
+
+// Matrix A: (Height, Width) = (8192, 8192)
+
+
+// Launching 'Shared' MatTranspose Kernel...
+// BlockDim (x,y): 32 32
+// GridDim (x,y): 256 256
+// End of 'Shared' MatTranspose Kernel...
+// 'Shared' MatTranspose completed with an elapsed time of 2.848416 (ms).
+
+
+===================================================================

@@ -1,0 +1,440 @@
+nvcc -arch=sm_60  -lX11 -lpthread -c cudaimg.cu
+CImg.h(58880): warning: controlling expression is constant
+          detected during:
+            instantiation of "cimg_library::CImgList<T> &cimg_library::CImgList<T>::insert(unsigned int, unsigned int) [with T=char]" 
+(12690): here
+            instantiation of "cimg_library::CImgList<t> &cimg_library::CImg<T>::move_to(cimg_library::CImgList<t> &, unsigned int) [with T=char, t=char]" 
+(62831): here
+
+CImg.h(58841): warning: controlling expression is constant
+
+CImg.h(58880): warning: controlling expression is constant
+
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = char]’:
+CImg.h:62750:56:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = unsigned char]’:
+CImg.h:57008:8:   required from ‘static cimg_library::CImg<T> cimg_library::CImg<T>::_logo40x38() [with T = unsigned char]’
+CImg.h:63306:140:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = char]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = char]’
+CImg.h:59153:31:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::get_append(char, float) const [with T = char]’
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = char]’
+CImg.h:31407:15:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::_system_strescape() [with T = char]’
+CImg.h:62983:194:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = unsigned char]’
+CImg.h:32425:96:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::get_resize(int, int, int, int, int, unsigned int, float, float, float, float) const [with T = unsigned char]’
+CImg.h:32402:127:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::resize(int, int, int, int, int, unsigned int, float, float, float, float) [with T = unsigned char]’
+CImg.h:63168:89:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = unsigned int]’:
+CImg.h:21926:8:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, unsigned int>::type> cimg_library::CImg<T>::_cimg_math_parser::get_level(cimg_library::CImg<typename cimg_library::cimg::last<T, char>::type>&) const [with T = float; typename cimg_library::cimg::last<T, unsigned int>::type = unsigned int; typename cimg_library::cimg::last<T, char>::type = char]’
+CImg.h:16803:25:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = unsigned char; T = float]’:
+CImg.h:30813:126:   required from ‘cimg_library::CImg<typename cimg_library::CImg<t>::Tuint> cimg_library::CImg<T>::get_index(const cimg_library::CImg<t>&, float, bool) const [with t = unsigned char; T = unsigned char; typename cimg_library::CImg<t>::Tuint = unsigned int]’
+CImg.h:10319:58:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’
+CImg.h:10119:29:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::assign(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:8147:1:   required from ‘cimg_library::CImgDisplay::CImgDisplay(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:63249:87:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = float]’:
+CImg.h:30813:126:   required from ‘cimg_library::CImg<typename cimg_library::CImg<t>::Tuint> cimg_library::CImg<T>::get_index(const cimg_library::CImg<t>&, float, bool) const [with t = unsigned char; T = unsigned char; typename cimg_library::CImg<t>::Tuint = unsigned int]’
+CImg.h:10319:58:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’
+CImg.h:10119:29:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::assign(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:8147:1:   required from ‘cimg_library::CImgDisplay::CImgDisplay(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:63249:87:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = long unsigned int]’:
+CImg.h:29016:8:   required from ‘static cimg_library::CImg<T> cimg_library::CImg<T>::vector(const T&, const T&, const T&, const T&, const T&) [with T = long unsigned int]’
+CImg.h:17039:109:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = double]’:
+CImg.h:27626:87:   required from ‘cimg_library::CImg<typename cimg_library::cimg::superset<T, double>::type> cimg_library::CImg<T>::get_stats(unsigned int) const [with T = float; typename cimg_library::cimg::superset<T, double>::type = double]’
+CImg.h:17099:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = char; T = bool]’:
+CImg.h:22002:124:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, bool>::type> cimg_library::CImg<T>::_cimg_math_parser::is_inside_string(cimg_library::CImg<typename cimg_library::cimg::last<T, char>::type>&) const [with T = float; typename cimg_library::cimg::last<T, bool>::type = bool; typename cimg_library::cimg::last<T, char>::type = char]’
+CImg.h:17439:34:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = bool]’:
+CImg.h:22002:124:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, bool>::type> cimg_library::CImg<T>::_cimg_math_parser::is_inside_string(cimg_library::CImg<typename cimg_library::cimg::last<T, char>::type>&) const [with T = float; typename cimg_library::cimg::last<T, bool>::type = bool; typename cimg_library::cimg::last<T, char>::type = char]’
+CImg.h:17439:34:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = long int]’:
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = long int]’
+CImg.h:19524:131:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = unsigned int]’:
+CImg.h:28522:22:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::sort(bool, char) [with T = unsigned int]’
+CImg.h:21474:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = unsigned int; T = float]’:
+CImg.h:10319:58:   recursively required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned int]’
+CImg.h:10319:58:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’
+CImg.h:10119:29:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::assign(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:8147:1:   required from ‘cimg_library::CImgDisplay::CImgDisplay(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:63249:87:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = float]’:
+CImg.h:27186:22:   required from ‘T cimg_library::CImg<T>::kth_smallest(cimg_library::CImg<T>::ulongT) const [with T = float; cimg_library::CImg<T>::ulongT = long unsigned int]’
+CImg.h:27233:34:   required from ‘T cimg_library::CImg<T>::median() const [with T = float]’
+CImg.h:17080:89:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = double]’:
+CImg.h:27743:80:   required from ‘double cimg_library::CImg<T>::det() const [with T = double]’
+CImg.h:23015:99:   required from ‘static double cimg_library::CImg<T>::_cimg_math_parser::mp_det(cimg_library::CImg<T>::_cimg_math_parser&) [with T = float]’
+CImg.h:19593:104:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = int]’:
+CImg.h:32419:73:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::get_resize(int, int, int, int, int, unsigned int, float, float, float, float) const [with T = int]’
+CImg.h:32402:127:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::resize(int, int, int, int, int, unsigned int, float, float, float, float) [with T = int]’
+CImg.h:20334:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = long unsigned int]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = long unsigned int]’
+CImg.h:59153:31:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::get_append(char, float) const [with T = long unsigned int]’
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = long unsigned int]’
+CImg.h:18916:12:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = long int]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = long int]’
+CImg.h:59153:31:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::get_append(char, float) const [with T = long int]’
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = long int]’
+CImg.h:19524:131:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = int]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = int]’
+CImg.h:32425:96:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::get_resize(int, int, int, int, int, unsigned int, float, float, float, float) const [with T = int]’
+CImg.h:32402:127:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::resize(int, int, int, int, int, unsigned int, float, float, float, float) [with T = int]’
+CImg.h:20334:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = double; T = unsigned char]’:
+CImg.h:50059:8:   required from ‘cimg_library::CImg<typename cimg_library::CImg<T>::ucharT> cimg_library::CImg<T>::_get_select(const cimg_library::CImgDisplay&, int, int, int, int) const [with T = double; typename cimg_library::CImg<T>::ucharT = unsigned char]’
+CImg.h:49660:14:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, int>::type> cimg_library::CImg<T>::_select(cimg_library::CImgDisplay&, const char*, unsigned int, unsigned int*, int, int, int, bool, bool, bool, bool) const [with T = double; typename cimg_library::cimg::last<T, int>::type = int]’
+CImg.h:53743:157:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::_display(cimg_library::CImgDisplay&, const char*, bool, unsigned int*, bool, bool) const [with T = double]’
+CImg.h:53678:70:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::display(const char*, bool, unsigned int*, bool) const [with T = double]’
+CImg.h:23029:1:   required from ‘static double cimg_library::CImg<T>::_cimg_math_parser::mp_display_memory(cimg_library::CImg<T>::_cimg_math_parser&) [with T = float]’
+CImg.h:19535:93:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = float; T = unsigned char]’:
+CImg.h:50059:8:   required from ‘cimg_library::CImg<typename cimg_library::CImg<T>::ucharT> cimg_library::CImg<T>::_get_select(const cimg_library::CImgDisplay&, int, int, int, int) const [with T = float; typename cimg_library::CImg<T>::ucharT = unsigned char]’
+CImg.h:49660:14:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, int>::type> cimg_library::CImg<T>::_select(cimg_library::CImgDisplay&, const char*, unsigned int, unsigned int*, int, int, int, bool, bool, bool, bool) const [with T = float; typename cimg_library::cimg::last<T, int>::type = int]’
+CImg.h:53743:157:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::_display(cimg_library::CImgDisplay&, const char*, bool, unsigned int*, bool, bool) const [with T = float]’
+CImg.h:53678:70:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::display(const char*, bool, unsigned int*, bool) const [with T = float]’
+CImg.h:23465:1:   required from ‘static double cimg_library::CImg<T>::_cimg_math_parser::mp_image_display(cimg_library::CImg<T>::_cimg_math_parser&) [with T = float]’
+CImg.h:19583:96:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+nvcc -arch=sm_60  -lX11 -lpthread -o gauss main.cu cudaimg.o
+CImg.h(58880): warning: controlling expression is constant
+          detected during:
+            instantiation of "cimg_library::CImgList<T> &cimg_library::CImgList<T>::insert(unsigned int, unsigned int) [with T=char]" 
+(12690): here
+            instantiation of "cimg_library::CImgList<t> &cimg_library::CImg<T>::move_to(cimg_library::CImgList<t> &, unsigned int) [with T=char, t=char]" 
+(62831): here
+
+CImg.h(58841): warning: controlling expression is constant
+
+CImg.h(58880): warning: controlling expression is constant
+
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = char]’:
+CImg.h:62750:56:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = unsigned char]’:
+CImg.h:57008:8:   required from ‘static cimg_library::CImg<T> cimg_library::CImg<T>::_logo40x38() [with T = unsigned char]’
+CImg.h:63306:140:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = char]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = char]’
+CImg.h:59153:31:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::get_append(char, float) const [with T = char]’
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = char]’
+CImg.h:31407:15:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::_system_strescape() [with T = char]’
+CImg.h:62983:194:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = unsigned char]’
+CImg.h:32425:96:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::get_resize(int, int, int, int, int, unsigned int, float, float, float, float) const [with T = unsigned char]’
+CImg.h:32402:127:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::resize(int, int, int, int, int, unsigned int, float, float, float, float) [with T = unsigned char]’
+CImg.h:63168:89:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = unsigned int]’:
+CImg.h:21926:8:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, unsigned int>::type> cimg_library::CImg<T>::_cimg_math_parser::get_level(cimg_library::CImg<typename cimg_library::cimg::last<T, char>::type>&) const [with T = float; typename cimg_library::cimg::last<T, unsigned int>::type = unsigned int; typename cimg_library::cimg::last<T, char>::type = char]’
+CImg.h:16803:25:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = unsigned char; T = float]’:
+CImg.h:30813:126:   required from ‘cimg_library::CImg<typename cimg_library::CImg<t>::Tuint> cimg_library::CImg<T>::get_index(const cimg_library::CImg<t>&, float, bool) const [with t = unsigned char; T = unsigned char; typename cimg_library::CImg<t>::Tuint = unsigned int]’
+CImg.h:10319:58:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’
+CImg.h:10119:29:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::assign(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:8147:1:   required from ‘cimg_library::CImgDisplay::CImgDisplay(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:63249:87:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = float]’:
+CImg.h:30813:126:   required from ‘cimg_library::CImg<typename cimg_library::CImg<t>::Tuint> cimg_library::CImg<T>::get_index(const cimg_library::CImg<t>&, float, bool) const [with t = unsigned char; T = unsigned char; typename cimg_library::CImg<t>::Tuint = unsigned int]’
+CImg.h:10319:58:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’
+CImg.h:10119:29:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::assign(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:8147:1:   required from ‘cimg_library::CImgDisplay::CImgDisplay(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:63249:87:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = long unsigned int]’:
+CImg.h:29016:8:   required from ‘static cimg_library::CImg<T> cimg_library::CImg<T>::vector(const T&, const T&, const T&, const T&, const T&) [with T = long unsigned int]’
+CImg.h:17039:109:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = double]’:
+CImg.h:27626:87:   required from ‘cimg_library::CImg<typename cimg_library::cimg::superset<T, double>::type> cimg_library::CImg<T>::get_stats(unsigned int) const [with T = float; typename cimg_library::cimg::superset<T, double>::type = double]’
+CImg.h:17099:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = char; T = bool]’:
+CImg.h:22002:124:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, bool>::type> cimg_library::CImg<T>::_cimg_math_parser::is_inside_string(cimg_library::CImg<typename cimg_library::cimg::last<T, char>::type>&) const [with T = float; typename cimg_library::cimg::last<T, bool>::type = bool; typename cimg_library::cimg::last<T, char>::type = char]’
+CImg.h:17439:34:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = bool]’:
+CImg.h:22002:124:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, bool>::type> cimg_library::CImg<T>::_cimg_math_parser::is_inside_string(cimg_library::CImg<typename cimg_library::cimg::last<T, char>::type>&) const [with T = float; typename cimg_library::cimg::last<T, bool>::type = bool; typename cimg_library::cimg::last<T, char>::type = char]’
+CImg.h:17439:34:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = long int]’:
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = long int]’
+CImg.h:19524:131:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = unsigned int]’:
+CImg.h:28522:22:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::sort(bool, char) [with T = unsigned int]’
+CImg.h:21474:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = unsigned int; T = float]’:
+CImg.h:10319:58:   recursively required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned int]’
+CImg.h:10319:58:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::render(const cimg_library::CImg<T>&, bool) [with T = unsigned char]’
+CImg.h:10119:29:   required from ‘cimg_library::CImgDisplay& cimg_library::CImgDisplay::assign(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:8147:1:   required from ‘cimg_library::CImgDisplay::CImgDisplay(const cimg_library::CImg<T>&, const char*, unsigned int, bool, bool) [with T = unsigned char]’
+CImg.h:63249:87:   required from ‘int cimg_library::cimg::dialog(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*, const cimg_library::CImg<T>&, bool) [with t = unsigned char]’
+CImg.h:63306:165:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = float]’:
+CImg.h:27186:22:   required from ‘T cimg_library::CImg<T>::kth_smallest(cimg_library::CImg<T>::ulongT) const [with T = float; cimg_library::CImg<T>::ulongT = long unsigned int]’
+CImg.h:27233:34:   required from ‘T cimg_library::CImg<T>::median() const [with T = float]’
+CImg.h:17080:89:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = double]’:
+CImg.h:27743:80:   required from ‘double cimg_library::CImg<T>::det() const [with T = double]’
+CImg.h:23015:99:   required from ‘static double cimg_library::CImg<T>::_cimg_math_parser::mp_det(cimg_library::CImg<T>::_cimg_math_parser&) [with T = float]’
+CImg.h:19593:104:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&) [with T = int]’:
+CImg.h:32419:73:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::get_resize(int, int, int, int, int, unsigned int, float, float, float, float) const [with T = int]’
+CImg.h:32402:127:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::resize(int, int, int, int, int, unsigned int, float, float, float, float) [with T = int]’
+CImg.h:20334:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12241:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = long unsigned int]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = long unsigned int]’
+CImg.h:59153:31:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::get_append(char, float) const [with T = long unsigned int]’
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = long unsigned int]’
+CImg.h:18916:12:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+           try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = long int]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = long int]’
+CImg.h:59153:31:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::get_append(char, float) const [with T = long int]’
+CImg.h:57907:26:   required from ‘cimg_library::CImg<T> cimg_library::CImgList<T>::operator>(char) const [with T = long int]’
+CImg.h:19524:131:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<T>&, bool) [with T = int]’:
+CImg.h:13094:25:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::operator+() const [with T = int]’
+CImg.h:32425:96:   required from ‘cimg_library::CImg<T> cimg_library::CImg<T>::get_resize(int, int, int, int, int, unsigned int, float, float, float, float) const [with T = int]’
+CImg.h:32402:127:   required from ‘cimg_library::CImg<T>& cimg_library::CImg<T>::resize(int, int, int, int, int, unsigned int, float, float, float, float) [with T = int]’
+CImg.h:20334:1:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12303:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = double; T = unsigned char]’:
+CImg.h:50059:8:   required from ‘cimg_library::CImg<typename cimg_library::CImg<T>::ucharT> cimg_library::CImg<T>::_get_select(const cimg_library::CImgDisplay&, int, int, int, int) const [with T = double; typename cimg_library::CImg<T>::ucharT = unsigned char]’
+CImg.h:49660:14:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, int>::type> cimg_library::CImg<T>::_select(cimg_library::CImgDisplay&, const char*, unsigned int, unsigned int*, int, int, int, bool, bool, bool, bool) const [with T = double; typename cimg_library::cimg::last<T, int>::type = int]’
+CImg.h:53743:157:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::_display(cimg_library::CImgDisplay&, const char*, bool, unsigned int*, bool, bool) const [with T = double]’
+CImg.h:53678:70:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::display(const char*, bool, unsigned int*, bool) const [with T = double]’
+CImg.h:23029:1:   required from ‘static double cimg_library::CImg<T>::_cimg_math_parser::mp_display_memory(cimg_library::CImg<T>::_cimg_math_parser&) [with T = float]’
+CImg.h:19535:93:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+         try { _data = new T[siz]; } catch (...) {
+               ^
+CImg.h: In instantiation of ‘cimg_library::CImg<T>::CImg(const cimg_library::CImg<t>&) [with t = float; T = unsigned char]’:
+CImg.h:50059:8:   required from ‘cimg_library::CImg<typename cimg_library::CImg<T>::ucharT> cimg_library::CImg<T>::_get_select(const cimg_library::CImgDisplay&, int, int, int, int) const [with T = float; typename cimg_library::CImg<T>::ucharT = unsigned char]’
+CImg.h:49660:14:   required from ‘cimg_library::CImg<typename cimg_library::cimg::last<T, int>::type> cimg_library::CImg<T>::_select(cimg_library::CImgDisplay&, const char*, unsigned int, unsigned int*, int, int, int, bool, bool, bool, bool) const [with T = float; typename cimg_library::cimg::last<T, int>::type = int]’
+CImg.h:53743:157:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::_display(cimg_library::CImgDisplay&, const char*, bool, unsigned int*, bool, bool) const [with T = float]’
+CImg.h:53678:70:   required from ‘const cimg_library::CImg<T>& cimg_library::CImg<T>::display(const char*, bool, unsigned int*, bool) const [with T = float]’
+CImg.h:23465:1:   required from ‘static double cimg_library::CImg<T>::_cimg_math_parser::mp_image_display(cimg_library::CImg<T>::_cimg_math_parser&) [with T = float]’
+CImg.h:19583:96:   required from ‘unsigned int cimg_library::CImg<T>::_cimg_math_parser::compile(char*, char*, unsigned int, unsigned int*, bool) [with T = float]’
+CImg.h:16851:104:   required from ‘cimg_library::CImg<T>::_cimg_math_parser::_cimg_math_parser(const char*, const char*, const cimg_library::CImg<T>&, cimg_library::CImg<T>*, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*, bool) [with T = float]’
+CImg.h:27506:210:   required from ‘double cimg_library::CImg<T>::_eval(cimg_library::CImg<T>*, const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:27463:66:   required from ‘double cimg_library::CImg<T>::eval(const char*, double, double, double, double, const cimg_library::CImgList<T>*, cimg_library::CImgList<T>*) const [with T = float]’
+CImg.h:63328:41:   required from here
+CImg.h:12221:15: warning: ISO C++ does not support variable-length array types [-Wvla]
+NaiveGaussianBlur took 0.069568 (ms)...
+GaussianBlur took 0.071392 (ms)...
